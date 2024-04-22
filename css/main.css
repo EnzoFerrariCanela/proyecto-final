@@ -1,0 +1,242 @@
+/* reset */
+*{
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;   
+}
+
+/* estilos generales */
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* mobile first */
+
+/* estilos header */
+header{
+    background-color: #A6D1D8;
+    box-shadow: 10px 15px 50px #87a9b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilos main */
+main{
+   background-color: #d8e7ee; 
+}
+
+main div img{
+  box-shadow: 10px 15px 30px #87a9b1;  
+}
+
+/* main index*/
+main .index{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+main .img-index{ 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
+
+main div iframe{
+    width: 100%; 
+}
+
+/* main vuelos*/
+main .vuelos{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+main .img-vuelos-in{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 150px);  
+}
+
+/* main alojamientos */
+.alojamientos{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+/* main paquetes */
+.paquetes{
+    padding-bottom: 10px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.anuncio{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .parrafo-uno, main .parrafo-dos{
+    margin-left: 15px;
+}
+
+/* main ingresar */
+.ingresar{
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+main ul{
+    list-style: none;
+    margin-top: 10px;
+    padding-right: 85px;
+}
+
+/* section */
+section{
+    background-color: #d8e7ee;  
+}
+
+section div{
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+section div h4{
+    text-decoration: underline;
+}
+
+section div p{
+    margin: 10px;
+}
+
+/* estilos footer */
+footer{
+    background-color: #A6D1D8;
+    margin-top: 10px;
+    box-shadow: -10px -15px 30px #87a9b1;
+}
+
+footer div ul{
+    list-style: none;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info{
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 5px;
+}
+
+/* estilos escritorio */
+@media screen and (min-width: 1024px){
+
+    main div p{
+        margin-top: 5px;
+    }
+
+    /* responsive index */
+    main .img-index{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 120px;
+        
+        /* grid */
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 150px);
+    }
+
+    main div iframe{
+        padding: 50px;
+    }
+
+    /* responsive vuelos */
+
+    main .vuelos{
+        padding-bottom: 20px;
+    }   
+
+    main .img-vuelos-in{
+        width: 100%;
+        height: 100%;
+        
+        /* grid */
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    main .nueva-york,  main .rio-de-janeiro{
+        margin-top: 100px;
+    }
+
+    main .playa-del-carmen{
+        margin-top: 140px;
+    }
+
+    main .vuelos-nacionales{
+        margin-top: 40px;
+    }
+
+    main .boton{
+        margin-top: 10px;
+        margin-left: 95px;
+    }
+
+    main .img-vuelos-na{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+
+        /* grid */
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    main .salta, main .bariloche, main .ushuaia{
+        margin-top: 100px;
+    }
+
+    /* responsive */
+    section{
+        padding-bottom: 40px;
+    }
+
+    section div{
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 50%);
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+}    
