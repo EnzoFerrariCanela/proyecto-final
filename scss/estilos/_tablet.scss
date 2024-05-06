@@ -1,0 +1,106 @@
+
+// estilos tablet
+
+//imports
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*mq tablet*/
+@media screen and (min-width: 700px){
+    main{
+
+        //reponsive index
+        .img-index{
+            margin-top: 20px;
+            @include grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr); 
+            gap: 15px; 
+        }
+
+        .rio-de-janeiro1{
+            grid-column: span 2;
+        }
+        
+        //responsive vuelos
+        .img-vuelos-in{
+           @include grid;
+           grid-template-columns:repeat(2, 1fr);
+           grid-template-rows:repeat(3, 1fr);
+           gap: 20px; 
+        }
+
+        .img-vuelos-na{
+            margin: 30px 0px;
+            @include grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .boton{
+            margin-left: 90px;
+        }
+
+        //responsive alojamientos
+        .hoteles{
+            @include grid;
+        }
+        .img-alojamientos-in{
+            @include grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            gap: 30px;
+        }
+
+        .img-alojamientos-na{
+            margin-top: 30px;
+            @include grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(2, 1fr);
+            gap: 20px; 
+        }
+
+        .iguazu{
+            margin-left: 30px;
+        }
+
+        .calafate{
+            grid-column: span 2;
+        }
+        
+        //responive paquetes
+        .paquetes-p{
+            @include grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin-bottom: -50px;
+        }
+
+        .parrafo-uno{
+            grid-column: 2/-3;
+            grid-row: 2/2;
+        }
+
+        .descuentos{
+            margin-top:25px; 
+            @include grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .eu{
+            grid-column: span 2;
+        }
+
+        .car{
+            margin-left: 15px;
+        }
+
+        .paquetes, form{
+            margin-bottom: 20px;
+        }
+    }
+    
+}

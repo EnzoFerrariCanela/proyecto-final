@@ -1,0 +1,149 @@
+
+//estilos mobile 
+
+/*mobile first*/
+
+//imports
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*reset*/
+*{
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*estilos header*/
+header{
+    background-color: $color-principal;
+    box-shadow: $sombra;
+    @include flex-1
+}
+
+/*estilos main*/
+main{
+   background-color: $color-secundario;
+   margin-top: 35px;
+
+    div img{
+    box-shadow: $sombra;  
+    }
+
+    //index
+    .index{
+        @include grid
+    }
+
+    .img-index{ 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    div iframe{
+        width: 100%; 
+    }
+    
+    //vuelos
+    .vuelos{
+        @include grid
+    }
+
+    .img-vuelos-in{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 150px);  
+    }
+
+    .boton{
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+
+    //alojamientos
+    .alojamientos{
+        @include grid
+    }
+
+    .boton-2{
+        margin-bottom: 20px;
+    }
+
+    //paquetes
+    .paquetes{
+        @include grid;
+    }
+    
+   .paquetes-p{
+        padding-bottom: 10px;
+        @include grid
+    }
+    
+    .anuncio{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .parrafo-uno, .parrafo-dos{
+        margin-left: 15px;
+    }
+
+    //ingresar
+    .ingresar{
+        margin-top: 20px;
+       @include grid
+    }
+
+    ul{
+        list-style: none;
+        margin-top: 10px;
+        padding-right: 85px;
+    }
+}
+
+/*section*/
+section{
+    background-color: $color-secundario;
+
+    div{
+        margin-top: 10px;
+        @include grid
+    }
+    
+    div h4{
+        text-decoration: underline;
+    }
+
+    div p{
+        margin: 10px;
+    }
+}
+
+/*footer*/
+footer{
+    background-color: $color-principal;
+    margin-top: 10px;
+    box-shadow: $sombra-2;
+
+    div ul{
+        list-style: none;
+        margin: 15px;
+        gap: 5px;
+        @include flex-2
+    }
+
+    .redes{
+        @include flex-1
+    }
+
+    .info{
+        margin-top: 15px;
+        gap: 5px;
+        @include grid
+    }
+}

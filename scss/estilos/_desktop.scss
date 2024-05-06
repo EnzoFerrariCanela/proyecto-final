@@ -1,0 +1,165 @@
+
+//estilos desktop
+
+//imports
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*mq desktop*/
+@media screen and (min-width: 1024px){
+
+    /*main*/
+    main{
+      div p{
+        margin-top: 5px;
+        }
+
+        //responsive index
+        .img-index{
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 120px;
+            @include grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 150px);
+        }
+
+        .rio-de-janeiro1{
+            grid-column: 3/3;
+        }
+        
+        div iframe{
+            padding: 50px;
+        }
+
+        //responsive vuelos
+        .vuelos{
+            padding-bottom: 20px;
+        } 
+
+        .img-vuelos-in{
+            width: 100%;
+            height: 100%;
+            @include grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 150px);
+        }
+
+        .nueva-york, .rio-de-janeiro{
+            margin-top: 100px;
+        }
+
+        .playa-del-carmen{
+            margin-top: 140px;
+        }
+
+        .vuelos-nacionales{
+            margin-top: 40px;
+        }
+
+        .boton{
+            margin-top: 10px;
+            margin-left: 95px;
+        }
+
+       .img-vuelos-na{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+        @include grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 150px);
+        } 
+        
+        .salta, .bariloche, .ushuaia{
+            margin-top: 100px;
+        }
+
+        //reponsive alojamientos
+        .img-alojamientos-in{
+            @include grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 200px);
+        }
+
+        .varadero{
+            margin-right: 100px;
+        }
+
+        .puerto-plata{
+            margin-left: 150px;
+        }
+
+        .jamaica{
+            margin-top: 100px;
+            margin-right: 55px;
+        }
+
+        .playa-del-carmen2{
+            margin-top: 100px;
+            margin-left: 150px
+        }
+
+        .hoteles{
+            margin-top: 120px;
+            @include grid;
+        }
+
+        .img-alojamientos-na{
+            @include grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 50px;
+        }
+
+        .calafate{
+            grid-column: 3/3;
+        }
+
+        //responsive paquetes
+        .paquetes-p{
+            margin-bottom: 50px;
+            margin-left: 50px;
+            @include grid;
+            grid-template-columns:repeat(2, 1fr) ;
+            grid-template-rows: repeat(1, 1fr);
+        }
+        .parrafo-uno, .parrafo-dos{
+            margin-right: 50px;
+            align-content: center;
+        }
+
+        .descuentos{
+            margin: 20px 0px;
+            @include grid;
+            grid-template-columns:repeat(3, 1fr) ;
+            grid-template-rows:repeat(1, 1fr);
+            gap: 20px;     
+        }
+
+        .paquetes, form{
+            margin-bottom: 20px;
+        }
+
+        .eu{
+            grid-column: 3/4;
+        }
+
+    }
+
+    /*section*/
+    section{
+        padding-bottom: 40px;
+
+        div{
+            display: grid;  
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 50%);
+        }
+    }
+    
+    /*footer*/
+    footer{
+        margin-top: 30px;
+    }  
+}

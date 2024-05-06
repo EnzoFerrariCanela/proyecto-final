@@ -1,242 +1,373 @@
-/* reset */
-*{
-    padding: 0px;
-    margin: 0px; 
-    box-sizing: border-box;   
+/*mobile first*/
+/*reset*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-/* estilos generales */
-body{
-    
-    font-family: Arial, Helvetica, sans-serif;
+/*estilos generales*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* mobile first */
-
-/* estilos header */
-header{
-    background-color: #A6D1D8;
-    box-shadow: 10px 15px 50px #87a9b1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*estilos header*/
+header {
+  background-color: #A6D1D8;
+  box-shadow: 10px 15px 50px #87a9b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* estilos main */
-main{
-   background-color: #d8e7ee; 
+/*estilos main*/
+main {
+  background-color: #d8e7ee;
+  margin-top: 35px;
+}
+main div img {
+  box-shadow: 10px 15px 50px #87a9b1;
+}
+main .index {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+main .img-index {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 150px);
+}
+main div iframe {
+  width: 100%;
+}
+main .vuelos {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+main .img-vuelos-in {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 150px);
+}
+main .boton {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+main .alojamientos {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+main .boton-2 {
+  margin-bottom: 20px;
+}
+main .paquetes {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+main .paquetes-p {
+  padding-bottom: 10px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+main .anuncio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .parrafo-uno, main .parrafo-dos {
+  margin-left: 15px;
+}
+main .ingresar {
+  margin-top: 20px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+main ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-right: 85px;
 }
 
-main div img{
-  box-shadow: 10px 15px 30px #87a9b1;  
+/*section*/
+section {
+  background-color: #d8e7ee;
+}
+section div {
+  margin-top: 10px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+section div h4 {
+  text-decoration: underline;
+}
+section div p {
+  margin: 10px;
 }
 
-/* main index*/
-main .index{
-    display: grid;
-    justify-items: center;
-    align-content: center;
+/*footer*/
+footer {
+  background-color: #A6D1D8;
+  margin-top: 10px;
+  box-shadow: -10px -15px 30px #87a9b1;
+}
+footer div ul {
+  list-style: none;
+  margin: 15px;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .info {
+  margin-top: 15px;
+  gap: 5px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
 }
 
-main .img-index{ 
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 150px);
-}
-
-main div iframe{
-    width: 100%; 
-}
-
-/* main vuelos*/
-main .vuelos{
-    display: grid;
-    justify-items: center;
-    align-content: center;
-}
-
-main .img-vuelos-in{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 150px);  
-}
-
-/* main alojamientos */
-.alojamientos{
-    display: grid;
-    justify-items: center;
-    align-content: center;
-}
-
-/* main paquetes */
-.paquetes{
-    padding-bottom: 10px;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-}
-
-.anuncio{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-main .parrafo-uno, main .parrafo-dos{
-    margin-left: 15px;
-}
-
-/* main ingresar */
-.ingresar{
+/*mq tablet*/
+@media screen and (min-width: 700px) {
+  main .img-index {
     margin-top: 20px;
     display: grid;
     justify-items: center;
     align-content: center;
-}
-
-main ul{
-    list-style: none;
-    margin-top: 10px;
-    padding-right: 85px;
-}
-
-/* section */
-section{
-    background-color: #d8e7ee;  
-}
-
-section div{
-    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
+  main .rio-de-janeiro1 {
+    grid-column: span 2;
+  }
+  main .img-vuelos-in {
     display: grid;
     justify-items: center;
     align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+  main .img-vuelos-na {
+    margin: 30px 0px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+  main .boton {
+    margin-left: 90px;
+  }
+  main .hoteles {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+  }
+  main .img-alojamientos-in {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 30px;
+  }
+  main .img-alojamientos-na {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  main .iguazu {
+    margin-left: 30px;
+  }
+  main .calafate {
+    grid-column: span 2;
+  }
+  main .paquetes-p {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: -50px;
+  }
+  main .parrafo-uno {
+    grid-column: 2/-3;
+    grid-row: 2/2;
+  }
+  main .descuentos {
+    margin-top: 25px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  main .eu {
+    grid-column: span 2;
+  }
+  main .car {
+    margin-left: 15px;
+  }
+  main .paquetes, main form {
+    margin-bottom: 20px;
+  }
 }
-
-section div h4{
-    text-decoration: underline;
-}
-
-section div p{
-    margin: 10px;
-}
-
-/* estilos footer */
-footer{
-    background-color: #A6D1D8;
+/*mq desktop*/
+@media screen and (min-width: 1024px) {
+  /*main*/
+  main div p {
+    margin-top: 5px;
+  }
+  main .img-index {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 120px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 150px);
+  }
+  main .rio-de-janeiro1 {
+    grid-column: 3/3;
+  }
+  main div iframe {
+    padding: 50px;
+  }
+  main .vuelos {
+    padding-bottom: 20px;
+  }
+  main .img-vuelos-in {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+  main .nueva-york, main .rio-de-janeiro {
+    margin-top: 100px;
+  }
+  main .playa-del-carmen {
+    margin-top: 140px;
+  }
+  main .vuelos-nacionales {
+    margin-top: 40px;
+  }
+  main .boton {
     margin-top: 10px;
-    box-shadow: -10px -15px 30px #87a9b1;
-}
-
-footer div ul{
-    list-style: none;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-footer .redes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info{
+    margin-left: 95px;
+  }
+  main .img-vuelos-na {
+    width: 100%;
+    height: 100%;
     margin-top: 15px;
     display: grid;
     justify-items: center;
     align-content: center;
-    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+  main .salta, main .bariloche, main .ushuaia {
+    margin-top: 100px;
+  }
+  main .img-alojamientos-in {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+  main .varadero {
+    margin-right: 100px;
+  }
+  main .puerto-plata {
+    margin-left: 150px;
+  }
+  main .jamaica {
+    margin-top: 100px;
+    margin-right: 55px;
+  }
+  main .playa-del-carmen2 {
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+  main .hoteles {
+    margin-top: 120px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+  }
+  main .img-alojamientos-na {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px;
+  }
+  main .calafate {
+    grid-column: 3/3;
+  }
+  main .paquetes-p {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  main .parrafo-uno, main .parrafo-dos {
+    margin-right: 50px;
+    align-content: center;
+  }
+  main .descuentos {
+    margin: 20px 0px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+  }
+  main .paquetes, main form {
+    margin-bottom: 20px;
+  }
+  main .eu {
+    grid-column: 3/4;
+  }
+  /*section*/
+  section {
+    padding-bottom: 40px;
+  }
+  section div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 50%);
+  }
+  /*footer*/
+  footer {
+    margin-top: 30px;
+  }
 }
 
-/* estilos escritorio */
-@media screen and (min-width: 1024px){
-
-    main div p{
-        margin-top: 5px;
-    }
-
-    /* responsive index */
-    main .img-index{
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 120px;
-        
-        /* grid */
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 150px);
-    }
-
-    main div iframe{
-        padding: 50px;
-    }
-
-    /* responsive vuelos */
-
-    main .vuelos{
-        padding-bottom: 20px;
-    }   
-
-    main .img-vuelos-in{
-        width: 100%;
-        height: 100%;
-        
-        /* grid */
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 150px);
-    }
-
-    main .nueva-york,  main .rio-de-janeiro{
-        margin-top: 100px;
-    }
-
-    main .playa-del-carmen{
-        margin-top: 140px;
-    }
-
-    main .vuelos-nacionales{
-        margin-top: 40px;
-    }
-
-    main .boton{
-        margin-top: 10px;
-        margin-left: 95px;
-    }
-
-    main .img-vuelos-na{
-        width: 100%;
-        height: 100%;
-        margin-top: 15px;
-
-        /* grid */
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 150px);
-    }
-
-    main .salta, main .bariloche, main .ushuaia{
-        margin-top: 100px;
-    }
-
-    /* responsive */
-    section{
-        padding-bottom: 40px;
-    }
-
-    section div{
-        display: grid;  
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 50%);
-    }
-
-    footer{
-        margin-top: 30px;
-    }
-}    
+/*# sourceMappingURL=main.css.map */

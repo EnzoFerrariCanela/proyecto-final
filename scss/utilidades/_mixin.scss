@@ -1,0 +1,20 @@
+
+//mixin
+
+@mixin flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
