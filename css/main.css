@@ -19,23 +19,75 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header img {
+  display: block;
+}
 
 /*estilos main*/
 main {
   background-color: #d8e7ee;
-  margin-top: 35px;
+  margin-top: 25px;
+}
+main h1 {
+  margin: 20px;
 }
 main div img {
+  border-radius: 45px;
+  box-shadow: 10px 15px 50px #87a9b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main div img:hover {
+  border-radius: 0px;
+  box-shadow: 0px 0px 100px #243438;
+}
+main p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+main p:hover {
+  color: #207689;
+}
+main .boton-gral {
+  background-color: #A6D1D8;
+  border: 2px solid #207689;
+  border-radius: 5px;
+  padding: 5px;
+}
+main .boton-gral:hover {
+  color: #207689;
   box-shadow: 10px 15px 50px #87a9b1;
 }
-main .index {
+main .img-index {
+  height: 70vh;
+  margin: 70px;
+  margin-top: 250px;
   display: grid;
   justify-items: center;
   align-content: center;
-}
-main .img-index {
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 150px);
+  grid-template-rows: repeat(3, 1fr);
+}
+main .miami {
+  grid-row: 1/2;
+  grid-column: 1/-3;
+}
+main .madrid {
+  grid-row: 2/3;
+  grid-column: 1/-3;
+}
+main .rio-de-janeiro1 {
+  grid-row: 3/4;
+  grid-column: 1/-3;
+}
+main .index-h2 {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main div iframe {
   width: 100%;
@@ -47,19 +99,25 @@ main .vuelos {
 }
 main .img-vuelos-in {
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 150px);
+  grid-template-rows: repeat(6, 1fr);
 }
-main .boton {
-  margin-left: 70px;
-  margin-bottom: 20px;
+main .vuelos-nacionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 main .alojamientos {
   display: grid;
   justify-items: center;
   align-content: center;
 }
-main .boton-2 {
-  margin-bottom: 20px;
+main .h-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 main .paquetes {
   display: grid;
@@ -80,30 +138,85 @@ main .anuncio {
 main .parrafo-uno, main .parrafo-dos {
   margin-left: 15px;
 }
-main .ingresar {
-  margin-top: 20px;
-  display: grid;
-  justify-items: center;
-  align-content: center;
+main form {
+  margin-bottom: 10px;
 }
-main ul {
+main .ingresar {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #207689;
+}
+main .ingresar input {
+  margin: 10px 0px;
+  border: 2px solid #207689;
+  background-color: #A6D1D8;
+}
+main .ingresar p {
+  font-size: 15px;
+}
+main .ingresar ul {
   list-style: none;
   margin-top: 10px;
-  padding-right: 85px;
+  padding-right: 20px;
+}
+main .ingresar a {
+  padding: 10px;
+  background-color: #A6D1D8;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #207689;
+  border-radius: 10px;
+}
+main .ingresar a:hover {
+  box-shadow: 10px 15px 50px #87a9b1;
+}
+main .ingresar .facebook {
+  padding-left: 5px;
+}
+main .ingresar .google {
+  margin: 30px 0px;
+  padding-left: 15px;
+}
+main .ingresar .apple {
+  padding-left: 22px;
+  margin-bottom: 10px;
 }
 
 /*section*/
 section {
   background-color: #d8e7ee;
+  margin: 0px 10px;
+  box-shadow: 0px 0px 50px #87a9b1;
 }
-section div {
+section .section {
+  border: 2px solid #207689;
+  padding: 15px;
   margin-top: 10px;
   display: grid;
   justify-items: center;
   align-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
-section div h4 {
+section div h3 {
+  font-size: 20px;
   text-decoration: underline;
+}
+section div h3:hover {
+  color: #207689;
+}
+section .oferts {
+  margin-left: 90px;
+}
+section .office {
+  margin-left: 130px;
+}
+section .booking {
+  margin-left: 135px;
 }
 section div p {
   margin: 10px;
@@ -128,7 +241,14 @@ footer .redes {
   justify-content: space-between;
   align-items: center;
 }
+footer div h4 {
+  font-size: 15px;
+}
+footer div h4:hover {
+  color: #207689;
+}
 footer .info {
+  font-size: 12px;
   margin-top: 15px;
   gap: 5px;
   display: grid;
@@ -139,7 +259,7 @@ footer .info {
 /*mq tablet*/
 @media screen and (min-width: 700px) {
   main .img-index {
-    margin-top: 20px;
+    margin-top: 120px;
     display: grid;
     justify-items: center;
     align-content: center;
@@ -147,8 +267,19 @@ footer .info {
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
   }
+  main .madrid {
+    grid-row: 1/-3;
+    grid-column: 2/3;
+  }
   main .rio-de-janeiro1 {
-    grid-column: span 2;
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  main .index-h2 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   main .img-vuelos-in {
     display: grid;
@@ -167,9 +298,6 @@ footer .info {
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
   }
-  main .boton {
-    margin-left: 90px;
-  }
   main .hoteles {
     display: grid;
     justify-items: center;
@@ -183,8 +311,11 @@ footer .info {
     grid-template-rows: repeat(2, 200px);
     gap: 30px;
   }
+  main .boton-2 {
+    margin-right: 85px;
+  }
   main .img-alojamientos-na {
-    margin-top: 30px;
+    margin-top: 10px;
     display: grid;
     justify-items: center;
     align-content: center;
@@ -236,17 +367,21 @@ footer .info {
     margin-top: 5px;
   }
   main .img-index {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 120px;
-    display: grid;
-    justify-items: center;
-    align-content: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 150px);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  main .madrid {
+    grid-row: 1/2;
   }
   main .rio-de-janeiro1 {
-    grid-column: 3/3;
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  main .index-h2 {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   main div iframe {
     padding: 50px;
@@ -271,10 +406,6 @@ footer .info {
   }
   main .vuelos-nacionales {
     margin-top: 40px;
-  }
-  main .boton {
-    margin-top: 10px;
-    margin-left: 95px;
   }
   main .img-vuelos-na {
     width: 100%;
@@ -361,6 +492,8 @@ footer .info {
   }
   section div {
     display: grid;
+    justify-items: center;
+    align-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 50%);
   }

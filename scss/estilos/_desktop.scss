@@ -16,16 +16,22 @@
 
         //responsive index
         .img-index{
-            width: 100%;
-            margin-top: 15px;
-            margin-bottom: 120px;
-            @include grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(1, 150px);
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: repeat(1, 1fr);
+        }
+
+        .madrid{
+            grid-row: 1/2;
         }
 
         .rio-de-janeiro1{
-            grid-column: 3/3;
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+        
+        .index-h2{
+            margin-top: -100px;
+            @include flex-2;
         }
         
         div iframe{
@@ -55,11 +61,6 @@
 
         .vuelos-nacionales{
             margin-top: 40px;
-        }
-
-        .boton{
-            margin-top: 10px;
-            margin-left: 95px;
         }
 
        .img-vuelos-na{
@@ -152,7 +153,7 @@
         padding-bottom: 40px;
 
         div{
-            display: grid;  
+            @include grid;  
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 50%);
         }
